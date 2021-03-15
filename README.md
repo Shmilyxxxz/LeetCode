@@ -3,23 +3,23 @@ Exercises from leetcode.
 All the exercises is uesd by microsoft to interview.
 The following  is the number of the questions form Leetcode.
 
-4
-10
-25
-25
-30
-32
-37
-41
-42
-44
-45
-51
-52
-60
-65
-68
-72
+4	寻找两个正序数组的中位数	median of two sorted array	---求第K小的数,二分法
+10	正则表达式匹配	regular expresstion matching	---动态规划
+25	K个一组翻转链表	reserve nodes in K-group	---迭代、递归
+26	删除有序数组中重复数字	delete the duplicates from sorted array	---双指针
+30	串联所有单词的子串	substring with concatenation  of all words	---哈希表，统计匹配
+32	最长有效括号	Longest vaild parenthese	---动态规划、栈、双计数器
+37	数独器	soduku solver	---回溯（遍历，迭代）
+41	缺失的第一个正整数	first missing positive	---哈希函数思想，数组下标、原地哈希
+42	接雨水	trapping rain water	---动态规划、栈，双指针
+44	通配符匹配	wildcard mapping	---动态规划，参见题目10
+45	跳跃游戏2	Jump Game	---贪心算法
+51	N皇后	N-queens	---排列，回溯
+52	N皇后2	N-Queens	---参考51
+60	排列序列	Permutation Sequence	---数学题，缩小问题规模、迭代、回溯
+65	有效数字	valid number	---有限状态机
+68	文本左右对齐  	Text justification	---贪心算法，类似题45
+72	编辑距离	Edit Distance	---动态规划
 76
 84
 85
