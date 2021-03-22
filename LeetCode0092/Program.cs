@@ -1,5 +1,10 @@
 ﻿using System;
 
+
+/*
+Input: head = [1,2,3,4,5], left = 2, right = 4
+Output: [1,4,3,2,5]
+*/
 namespace LeetCode0092
 {
     class Program
@@ -7,6 +12,24 @@ namespace LeetCode0092
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+
+            ListNode head = new ListNode(0);
+            ListNode current = head;
+            for(int i =1;i<=5;i++)
+            {
+                current.next = new ListNode(i);
+                current = current.next;
+            }
+
+            var result = new Solution().ReverseBetween(head,2, 4);
+
+            current = result;
+            do
+            {
+                Console.WriteLine($"{current.val} ");
+                current = current.next;
+            }
+            while (current.next != null);
         }
     }
 
@@ -22,55 +45,10 @@ namespace LeetCode0092
         }
     }
 
+
     public class Solution
     {
         public ListNode ReverseBetween(ListNode head, int left, int right)
-        {
-
-            int currentIndex = 0;
-            ListNode FirstNode = new ListNode();
-            FirstNode.next = head;
-            ListNode currentNode = FirstNode.next;
-            ListNode BeforeLeft = new ListNode();
-            ListNode AfterRight = new ListNode();
-
-            while (currentNode.next != null)
-            {
-                if (currentIndex == left - 1)
-                {
-                    BeforeLeft = currentNode;
-                    AfterRight = currentNode.next;
-                }
-
-                //复制下一个节点
-                ListNode nextNode = currentNode.next;
-                if ((currentIndex >= left) && (currentIndex < right))
-                {
-                    //转向下一个节点
-                    currentNode.next.next = currentNode;
-                }
-                //移动当前指针
-                currentNode = nextNode;
-                currentIndex++;
-
-                //跳出循环
-                if (currentIndex == left)
-                {
-                    //1->4 2->5 
-                    ListNode temp = currentNode.next;
-                    BeforeLeft.next = currentNode;
-                    AfterRight.next = temp;
-                    break;
-                }
-            }
-            return FirstNode.next;
-
-        }
-    }
-
-    public class Solution2
-    {
-        public ListNode reverseBetween(ListNode head, int left, int right)
         {
             // 设置 dummyNode 是这一类问题的一般做法
             ListNode dummyNode = new ListNode(-1);
