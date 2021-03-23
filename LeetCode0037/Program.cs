@@ -18,7 +18,56 @@ namespace LeetCode037
         }
     }
 
-    public class Solution
+    //public class Solution
+    //{
+    //    const int GridsNumber = 3;
+    //    const int GridSize = 3;
+    //    const char SpaceValue = '.';
+    //    const char MinValue = '1';
+    //    const char MaxValue = '9';
+
+    //    public void SolveSudoku(char[][] board, char addValue, out bool hasSpace, out bool isError)
+    //    {
+    //        List<BitArray> RowList = new List<BitArray>();
+    //        List<BitArray> ColumnList = new List<BitArray>();
+    //        List<BitArray> SquareList = new List<BitArray>();
+
+    //        for (int i=0;i<9;i++)
+    //        {
+    //            RowList.Add(new BitArray(9, false));
+    //            ColumnList.Add(new BitArray(9, false));
+    //            SquareList.Add(new BitArray(9, false));
+    //        }
+
+    //        //i是column 表示横坐标，j是row表示纵坐标，
+    //        for (int i = 0; i < 9; i++)
+    //        {
+    //            for (int j = 0; j < 9; j++)
+    //            {
+    //                if(board[i][j]==SpaceValue)
+    //                {
+
+    //                }
+    //                else //轮询到数字，修改Row Column Square
+    //                {
+    //                    int value = (int)board[i][j];
+    //                    ColumnList[i][value] = true;
+    //                    RowList[j][value] = true;
+    //                    SquareList[(j/3)*3+i/3][value] = true;
+    //                }
+    //            }
+    //        }    
+    //    }
+
+    //    //public char check
+
+
+
+
+
+    //}
+
+    public class Solution3
     {
         const int GridsNumber = 3;
         const int GridSize = 3;
