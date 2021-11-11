@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 
-namespace LeetCode299
+namespace LeetCode0299
 {
     class Program
     {

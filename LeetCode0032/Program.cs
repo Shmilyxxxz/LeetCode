@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LeetCode032
+namespace LeetCode0032
 {
     class Program
     {

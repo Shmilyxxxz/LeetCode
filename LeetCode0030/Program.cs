@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace LeetCode030
+namespace LeetCode0030
 {
     class Program
     {
